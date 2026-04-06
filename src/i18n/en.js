@@ -1,0 +1,199 @@
+const en = {
+  nav: {
+    home: 'Home',
+    howItWorks: 'How It Works',
+    setup: 'Setup',
+    faq: 'FAQ',
+    blog: 'Blog',
+    buyNow: 'Buy Now',
+    redeem: 'Redeem Code',
+    language: 'Arabic',
+    languageAlt: 'English',
+  },
+  hero: {
+    title: 'Unlock TOD TV in Saudi Arabia',
+    description: 'Android uses the PlayMe app. Apple devices use WireGuard. This service is only for TOD TV unlock in KSA.',
+    download: 'Download Android App',
+    wireguard: 'Download WireGuard',
+    androidLink: 'https://api.playmetod.store/downloads/playme.apk',
+    wireguardLink: 'https://apps.apple.com/us/app/wireguard/id1441195209',
+  },
+  devices: {
+    title: 'Right App for Your Device',
+    items: [
+      { title: 'Android', description: 'Use PlayMe app to unlock TOD TV inside Saudi Arabia.' },
+      { title: 'Android TV', description: 'Install the PlayMe APK to stream TOD TV on your TV.' },
+      { title: 'iPhone / iPad', description: 'Use WireGuard because Apple does not allow PlayMe installation.' },
+      { title: 'Apple TV', description: 'Use WireGuard with Apple devices to open TOD TV.' },
+    ],
+  },
+  howItWorks: {
+    title: 'How TOD TV Unlock Works',
+    steps: [
+      { title: 'Buy subscription', description: 'Get the service for TOD TV unlock in Saudi Arabia.' },
+      { title: 'Choose the right app', description: 'Android uses PlayMe, Apple devices use WireGuard.' },
+      { title: 'Connect and open TOD TV', description: 'Connect the service then open TOD TV to stream.' },
+    ],
+  },
+  whichApp: {
+    title: 'Which app should I use?',
+    androidTitle: 'Android: Use PlayMe App',
+    androidDescription: 'PlayMe is the Android app used to unlock TOD TV inside Saudi Arabia.',
+    appleTitle: 'Apple: Use WireGuard',
+    appleDescription: 'Apple does not allow installing PlayMe. You must use WireGuard instead.',
+    androidButton: 'Download Android App',
+    wireguardButton: 'Download WireGuard',
+  },
+  downloader: {
+    title: 'Android TV Installation (Downloader)',
+    description: 'Use the Downloader app on Android TV and enter this code to download PlayMe quickly.',
+    enterCode: 'Enter this code',
+    code: '8682586',
+    copyButton: 'Copy Code',
+    copied: 'Copied',
+    steps: [
+      { title: '1 Install Downloader', description: 'Install the Downloader app on your Android TV.' },
+      { title: '2 Enter code', description: 'Open Downloader and enter code 8682586.' },
+      { title: '3 Download PlayMe', description: 'Download the PlayMe APK from the direct link.' },
+      { title: '4 Install', description: 'Install the app on your Android TV.' },
+      { title: '5 Open and connect', description: 'Open PlayMe and connect to start TOD TV.' },
+    ],
+  },
+  products: {
+    title: 'Choose Your Subscription',
+    subtitle: 'Choose the plan that unlocks TOD TV in Saudi Arabia.',
+    buyButton: 'Buy Now',
+    bestValue: 'Best Value',
+    androidOneMonth: 'PlayMe Android - 1 Month',
+    androidOneMonthDesc: 'Unlock TOD TV inside Saudi Arabia on Android devices.',
+    androidOneYear: 'PlayMe Android - 1 Year',
+    androidOneYearDesc: 'Annual plan to unlock TOD TV on Android with the best price.',
+    appleOneMonth: 'WireGuard Apple - 1 Month',
+    appleOneMonthDesc: 'Unlock TOD TV on Apple devices using WireGuard.',
+    appleThreeMonth: 'WireGuard Apple - 3 Months',
+    appleThreeMonthDesc: 'Three-month WireGuard plan for Apple devices.',
+    appleOneYear: 'WireGuard Apple - 1 Year',
+    appleOneYearDesc: 'Annual WireGuard plan to unlock TOD TV on Apple devices.',
+    androidGroupTitle: 'PlayMe for Android',
+    androidGroupText: 'Use PlayMe and Android TV APKs to unlock TOD TV in Saudi Arabia.',
+    appleGroupTitle: 'WireGuard for Apple',
+    appleGroupText: 'Use WireGuard on iPhone, iPad, and Apple TV to access TOD TV.',
+    modalTitle: 'You are leaving the PlayMe website',
+    modalMessage: 'You are leaving the PlayMe website to view this product. Continue?',
+    modalContinue: 'Continue',
+    modalCancel: 'Cancel',
+  },
+  actions: [
+    { title: 'Download App', subtitle: 'Start the app now', link: 'https://api.playmetod.store/downloads/playme.apk' },
+    { title: 'Setup Guide', subtitle: 'Learn the installation steps', link: '/setup' },
+    { title: 'Redeem Code', subtitle: 'Go to redeem page', link: 'https://wg.playmetod.store' },
+  ],
+  setup: {
+    title: 'Quick Setup Guides',
+    intro: 'Choose your device and follow the step-by-step guide.',
+    cards: [
+      { title: 'Android Setup', path: '/setup/android' },
+      { title: 'Android TV Setup', path: '/setup/android-tv' },
+      { title: 'Apple Setup (WireGuard)', path: '/setup/ios' },
+      { title: 'Apple TV Setup (WireGuard)', path: '/setup/apple-tv' },
+    ],
+  },
+  faq: {
+    title: 'FAQ',
+    items: [
+      { question: 'What does this service do?', answer: 'This service unlocks TOD TV inside Saudi Arabia using the correct app for each device.' },
+      { question: 'What is the difference between Android and Apple?', answer: 'Android uses the PlayMe app, while Apple devices use WireGuard because PlayMe cannot be installed.' },
+      { question: 'How do I download PlayMe?', answer: 'Use the PlayMe APK link on the Android setup page.' },
+      { question: 'Why do I need WireGuard?', answer: 'Apple does not allow installing PlayMe, so WireGuard is required for Apple devices.' },
+      { question: 'Is this service for Saudi Arabia only?', answer: 'Yes, the service is specifically for unlocking TOD TV in Saudi Arabia.' },
+    ],
+  },
+  cta: {
+    title: 'Start unlocking TOD TV now',
+    description: 'Choose your device, download the correct app, and connect to stream TOD TV in Saudi Arabia.',
+    buy: 'Buy Now',
+    redeem: 'Redeem Code',
+  },
+  setupPages: {
+    android: {
+      title: 'Android Setup',
+      description: 'Download the PlayMe APK. This app unlocks TOD TV in Saudi Arabia for Android phones.',
+      button: 'Download PlayMe for Android',
+      download: 'https://api.playmetod.store/downloads/playme.apk',
+      steps: [
+        'Buy a subscription from the website.',
+        'Download the PlayMe APK file.',
+        'Install the app on your Android device.',
+        'Enter the provided configuration in the app.',
+        'Connect to the service.',
+        'Open TOD TV after connection.'
+      ],
+      troubleshooting: [
+        'Enable installation from unknown sources.',
+        'Try downloading again if installation fails.',
+      ],
+    },
+    androidTv: {
+      title: 'Android TV Setup',
+      description: 'Install PlayMe APK on Android TV using USB or Downloader to unlock TOD TV in Saudi Arabia.',
+      button: 'Download PlayMe for Android TV',
+      download: 'https://api.playmetod.store/downloads/playme.apk',
+      steps: [
+        'Use a USB flash drive or Downloader app on Android TV.',
+        'In Downloader, enter code 8682586.',
+        'Download the APK file.',
+        'Open the installer and install the app.',
+        'Launch PlayMe and enter the configuration.',
+        'Connect then open TOD TV.'
+      ],
+      troubleshooting: [
+        'Enable install from unknown sources.',
+        'Use Downloader for a simpler Android TV install.',
+      ],
+    },
+    ios: {
+      title: 'Apple Setup (WireGuard)',
+      description: 'Apple cannot install PlayMe. Use WireGuard to unlock TOD TV in Saudi Arabia on iPhone and iPad.',
+      button: 'Download WireGuard',
+      download: 'https://apps.apple.com/us/app/wireguard/id1441195209',
+      steps: [
+        'Buy a subscription from the website.',
+        'Download WireGuard from the App Store.',
+        'Redeem your config at wg.playmetod.store',
+        'Import the provided configuration file.',
+        'Activate the connection in WireGuard.',
+        'Open TOD TV after connecting.'
+      ],
+      troubleshooting: [
+        'Make sure iOS is up to date.',
+        'Ensure the configuration file is imported correctly.',
+      ],
+    },
+    appleTv: {
+      title: 'Apple TV Setup (WireGuard)',
+      description: 'Apple TV cannot install PlayMe. Use WireGuard through Apple devices to unlock TOD TV on Apple TV.',
+      button: 'Download WireGuard',
+      download: 'https://apps.apple.com/us/app/wireguard/id1441195209',
+      steps: [
+        'Buy a subscription from the website.',
+        'Download WireGuard on your iPhone or iPad.',
+        'Import the configuration for the service.',
+        'Activate the connection in WireGuard.',
+        'Open TOD TV on Apple TV.'
+      ],
+      troubleshooting: [
+        'Check Apple TV network connectivity.',
+        'Restart the device if the connection does not work.',
+      ],
+    },
+  },
+  blog: {
+    title: 'Blog',
+    description: 'A placeholder for future articles about streaming, device setup, and updates.',
+  },
+  footer: {
+    copyright: '© 2026 PlayMe. All rights reserved.',
+  },
+}
+
+export default en

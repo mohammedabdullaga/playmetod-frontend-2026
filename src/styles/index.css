@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, rgba(255, 187, 0, 0.12), transparent 28%),
+    linear-gradient(180deg, #070a16 0%, #070a16 100%);
+  color: #e2e8f0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+button,
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgba(255, 187, 0, 0.35);
+}
+
+/* Mobile-specific styles */
+@media (max-width: 640px) {
+  /* Hero section mobile adjustments */
+  .hero-container {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .hero-text p {
+    font-size: 1rem !important;
+  }
+
+  .hero-image img {
+    max-width: 120px !important;
+  }
+
+  /* Navbar mobile adjustments */
+  .nav-container {
+    padding: 0.75rem 1rem !important;
+  }
+
+  .logo {
+    font-size: 1.5rem !important;
+  }
+
+  .nav-menu {
+    display: flex !important; /* Override to show on mobile if needed */
+  }
+
+  .nav-links {
+    gap: 0.5rem !important;
+  }
+
+  .lang-btn {
+    padding: 0.4rem 0.8rem !important;
+    font-size: 0.8rem !important;
+  }
+
+  /* Button touch targets */
+  button, a {
+    min-height: 44px !important;
+    min-width: 44px !important;
+  }
+
+  /* Section paddings */
+  section {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  /* Card adjustments */
+  .rounded-3xl {
+    padding: 1rem !important;
+  }
+
+  /* Grid layouts */
+  .grid-cols-2 {
+    grid-template-columns: 1fr !important;
+  }
+
+  .grid-cols-3 {
+    grid-template-columns: 1fr !important;
+  }
+
+  .grid-cols-4 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  /* Text sizes */
+  h1 {
+    font-size: 1.875rem !important;
+  }
+
+  h2 {
+    font-size: 1.5rem !important;
+  }
+
+  h3 {
+    font-size: 1.25rem !important;
+  }
+
+  p {
+    font-size: 0.875rem !important;
+  }
+
+  /* Spacing adjustments */
+  .space-y-6 > * + * {
+    margin-top: 1rem !important;
+  }
+
+  .gap-4 {
+    gap: 0.75rem !important;
+  }
+
+  .gap-6 {
+    gap: 1rem !important;
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+}
