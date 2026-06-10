@@ -32,6 +32,19 @@ a {
   background: rgba(255, 187, 0, 0.35);
 }
 
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 18s linear infinite;
+}
+
 /* Mobile-specific styles */
 @media (max-width: 640px) {
   /* Hero section mobile adjustments */

@@ -63,9 +63,10 @@ const en = {
     title: 'Choose Your Subscription',
     subtitle: 'Choose the plan that unlocks TOD TV in Saudi Arabia.',
     buyButton: 'Buy Now',
+    productUnavailable: 'Unavailable',
     bestValue: 'Best Value',
-    androidOneMonth: 'PlayMe Android - 1 Month',
-    androidOneMonthDesc: 'Unlock TOD TV inside Saudi Arabia on Android devices.',
+    androidOneMonth: 'PlayMe Android - World Cup 2026',
+    androidOneMonthDesc: 'Valid for the full World Cup 2026 period (50 days).',
     androidOneYear: 'PlayMe Android - 1 Year',
     androidOneYearDesc: 'Annual plan to unlock TOD TV on Android with the best price.',
     appleOneMonth: 'WireGuard Apple - 1 Month',
@@ -107,6 +108,9 @@ const en = {
       { question: 'Why do I need WireGuard?', answer: 'Apple does not allow installing PlayMe, so WireGuard is required for Apple devices.' },
       { question: 'Is this service for Saudi Arabia only?', answer: 'Yes, the service is specifically for unlocking TOD TV in Saudi Arabia.' },
     ],
+  },
+  alert: {
+    banner: 'WireGuard is currently not available. Apple support is still not supported; it may be available after 3 days.',
   },
   cta: {
     title: 'Start unlocking TOD TV now',

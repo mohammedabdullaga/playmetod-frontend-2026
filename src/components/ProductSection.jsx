@@ -5,11 +5,12 @@ const products = [
     id: 'android-1m',
     category: 'playmetod',
     nameKey: 'androidOneMonth',
-    price: '15 SAR',
+    price: '33 SAR',
     image: '/assets/playmetod-product.jpg',
     link: 'https://elitbahrain.rmz.gg/product/playmetod',
     badge: '',
     descriptionKey: 'androidOneMonthDesc',
+    active: true,
   },
   {
     id: 'android-1y',
@@ -20,6 +21,7 @@ const products = [
     link: 'https://elitbahrain.rmz.gg/product/playmetod-1-year',
     badge: 'bestValue',
     descriptionKey: 'androidOneYearDesc',
+    active: false,
   },
   {
     id: 'apple-1m',
@@ -30,6 +32,7 @@ const products = [
     link: 'https://elitbahrain.rmz.gg/product/ttbyk-abl-wireguard-shhry-7',
     badge: '',
     descriptionKey: 'appleOneMonthDesc',
+    active: false,
   },
   {
     id: 'apple-3m',
@@ -40,6 +43,7 @@ const products = [
     link: 'https://elitbahrain.rmz.gg/product/ttbyk-abl-wireguard-shhry-copy-3udaxa',
     badge: '',
     descriptionKey: 'appleThreeMonthDesc',
+    active: false,
   },
   {
     id: 'apple-1y',
@@ -50,6 +54,7 @@ const products = [
     link: 'https://elitbahrain.rmz.gg/product/ttbyk-abl-wireguard-md-3-ashhr-copy-mAm14m',
     badge: 'bestValue',
     descriptionKey: 'appleOneYearDesc',
+    active: false,
   },
 ]
 
@@ -105,26 +110,33 @@ function ProductSection({ texts }) {
                 </div>
 
                 <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
-                  {groupProducts.map((product) => (
-                    <div key={product.id} className="group overflow-hidden rounded-[28px] border border-[#ffbb00]/15 bg-slate-950/80 p-6 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-[#ffbb00]/30 hover:bg-slate-900/90">
-                      <div className="relative overflow-hidden rounded-3xl border border-[#ffbb00]/15 bg-slate-900/90 h-56">
-                        <img src={product.image} alt={texts.products[product.nameKey]} className="h-full w-full object-contain transition duration-300 group-hover:scale-105" />
-                        {product.badge && (
-                          <span className="absolute left-4 top-4 rounded-full bg-[#ffbb00] px-3 py-1 text-xs font-semibold uppercase tracking-[0.26em] text-slate-950 shadow-lg">
-                            {texts.products[product.badge]}
-                          </span>
-                        )}
+                  {groupProducts.map((product) => {
+                    const isEnabled = product.active
+                    return (
+                      <div key={product.id} className="group overflow-hidden rounded-[28px] border border-[#ffbb00]/15 bg-slate-950/80 p-6 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-[#ffbb00]/30 hover:bg-slate-900/90">
+                        <div className="relative overflow-hidden rounded-3xl border border-[#ffbb00]/15 bg-slate-900/90 h-56">
+                          <img src={product.image} alt={texts.products[product.nameKey]} className="h-full w-full object-contain transition duration-300 group-hover:scale-105" />
+                          {product.badge && (
+                            <span className="absolute left-4 top-4 rounded-full bg-[#ffbb00] px-3 py-1 text-xs font-semibold uppercase tracking-[0.26em] text-slate-950 shadow-lg">
+                              {texts.products[product.badge]}
+                            </span>
+                          )}
+                        </div>
+                        <div className="mt-6">
+                          <p className="text-sm uppercase tracking-[0.24em] text-[#ffbb00]/90">{texts.products[product.nameKey]}</p>
+                          <h4 className="mt-3 text-2xl font-semibold text-white">{product.price}</h4>
+                          <p className="mt-4 text-slate-400">{texts.products[product.descriptionKey]}</p>
+                        </div>
+                        <button
+                          onClick={isEnabled ? () => openProduct(product) : undefined}
+                          disabled={!isEnabled}
+                          className={`mt-6 inline-flex w-full items-center justify-center rounded-full px-5 py-3 text-sm font-semibold transition ${isEnabled ? 'bg-[#ffbb00] text-slate-950 hover:bg-[#e0a900]' : 'cursor-not-allowed bg-slate-700 text-slate-300 opacity-70'}`}
+                        >
+                          {isEnabled ? texts.products.buyButton : texts.products.productUnavailable}
+                        </button>
                       </div>
-                      <div className="mt-6">
-                        <p className="text-sm uppercase tracking-[0.24em] text-[#ffbb00]/90">{texts.products[product.nameKey]}</p>
-                        <h4 className="mt-3 text-2xl font-semibold text-white">{product.price}</h4>
-                        <p className="mt-4 text-slate-400">{texts.products[product.descriptionKey]}</p>
-                      </div>
-                      <button onClick={() => openProduct(product)} className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-[#ffbb00] px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-[#e0a900]">
-                        {texts.products.buyButton}
-                      </button>
-                    </div>
-                  ))}
+                    )
+                  })}
                 </div>
               </div>
             )

@@ -62,9 +62,10 @@ const ar = {
     title: 'اختر اشتراكك',
     subtitle: 'اختر الخطة المناسبة لتشغيل TOD TV في السعودية.',
     buyButton: 'شراء الآن',
+    productUnavailable: 'غير متاح',
     bestValue: 'أفضل قيمة',
-    androidOneMonth: 'PlayMe Android - شهر واحد',
-    androidOneMonthDesc: 'فتح TOD TV داخل السعودية على أجهزة Android.',
+    androidOneMonth: 'PlayMe Android - كأس العالم 2026',
+    androidOneMonthDesc: 'صالح طوال فترة كأس العالم 2026 الكاملة (50 يومًا).',
     androidOneYear: 'PlayMe Android - سنة واحدة',
     androidOneYearDesc: 'اشتراك سنوي لفتح TOD TV على Android بأفضل سعر.',
     appleOneMonth: 'WireGuard Apple - شهر واحد',
@@ -105,6 +106,9 @@ const ar = {
       { question: 'لماذا أحتاج WireGuard؟', answer: 'Apple لا تسمح بتثبيت تطبيق PlayMe، لذلك نوفر دليل استخدام WireGuard فقط.' },
       { question: 'هل هذه الخدمة خاصة بالسعودية؟', answer: 'نعم، الخدمة مخصصة لفتح TOD TV في المملكة العربية السعودية.' },
     ],
+  },
+  alert: {
+    banner: 'WireGuard غير متاح حاليًا، وApple ما زالت غير مدعومة، قد تكون متاحة بعد 3 أيام.',
   },
   cta: {
     title: 'ابدأ فتح TOD TV الآن',
