@@ -16,7 +16,7 @@ function Navbar({ texts, lang, onChangeLang }) {
   ]
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/90 backdrop-blur-xl">
+    <header className="relative z-40 border-b border-white/10 bg-slate-950/90 backdrop-blur-xl">
       <div className="mx-auto flex w-full max-w-7xl flex-wrap items-center justify-between gap-4 px-4 py-4 sm:px-6">
         <NavLink to="/" className="text-2xl font-black tracking-tight text-transparent bg-gradient-to-r from-[#ffbb00] to-[#ffbb00] bg-clip-text">
           PlayMe
