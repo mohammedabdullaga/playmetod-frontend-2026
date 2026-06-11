@@ -1,10 +1,10 @@
 function Hero({ texts }) {
   return (
     <section className="relative overflow-hidden px-4 py-16 sm:px-6 lg:px-8">
-      <div className="mx-auto flex max-w-6xl flex-col gap-12 rounded-[32px] border border-[#ffbb00]/15 bg-slate-950/80 p-8 shadow-glow sm:p-12">
+      <div className="mx-auto flex max-w-6xl flex-col gap-12 rounded-[32px] border border-[#cc9a00]/15 bg-slate-950/80 p-8 shadow-glow sm:p-12">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div className="space-y-6">
-            <span className="inline-flex rounded-full bg-[#ffbb00]/15 px-4 py-2 text-sm font-semibold text-[#ffbb00]/90">
+            <span className="inline-flex rounded-full bg-[#cc9a00]/15 px-4 py-2 text-sm font-semibold text-[#cc9a00]/90">
               PlayMe • TOD TV KSA
             </span>
             <div className="space-y-4">
@@ -16,17 +16,17 @@ function Hero({ texts }) {
               </p>
             </div>
             <div className="flex flex-col gap-3 sm:flex-row">
-              <a href={texts.hero.androidLink} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center rounded-full bg-[#ffbb00] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#e0a900]">
+              <a href={texts.hero.androidLink} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center rounded-full bg-[#cc9a00] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#b38f00]">
                 {texts.hero.download}
               </a>
-              <a href={texts.hero.wireguardLink} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center rounded-full border border-[#ffbb00]/15 bg-white/5 px-6 py-3 text-sm font-semibold text-slate-100 transition hover:bg-white/10">
+              <a href={texts.hero.wireguardLink} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center rounded-full border border-[#cc9a00]/15 bg-white/5 px-6 py-3 text-sm font-semibold text-slate-100 transition hover:bg-white/10">
                 {texts.hero.wireguard}
               </a>
             </div>
           </div>
-          <div className="relative overflow-hidden rounded-[28px] border border-[#ffbb00]/15 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-950 p-6 shadow-xl">
-            <div className="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-[#ffbb00] via-[#ffbb00] to-[#ffbb00] opacity-70" />
-            <div className="relative rounded-[24px] bg-[#090d1e] p-6 shadow-[0_35px_120px_-35px_rgba(255,187,0,0.75)]">
+          <div className="relative overflow-hidden rounded-[28px] border border-[#cc9a00]/15 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-950 p-6 shadow-lg">
+            <div className="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-[#cc9a00] via-[#cc9a00] to-[#cc9a00] opacity-70" />
+            <div className="relative rounded-[24px] bg-[#090d1e] p-6 shadow-[0_25px_90px_-30px_rgba(204,154,0,0.35)]">
               <div className="mb-6 flex items-center justify-between text-sm font-semibold text-slate-300">
                 <span>PlayMe</span>
                 <span className="rounded-full bg-white/10 px-3 py-1">TOD TV</span>

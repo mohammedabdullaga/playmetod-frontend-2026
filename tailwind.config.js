@@ -6,11 +6,11 @@ export default {
       colors: {
         surface: '#111827',
         surface2: '#171f3a',
-        glow: '#ffbb00',
-        gold: '#ffbb00',
+        glow: '#cc9a00',
+        gold: '#cc9a00',
       },
       boxShadow: {
-        glow: '0 24px 80px rgba(255, 187, 0, 0.16)',
+        glow: '0 18px 55px rgba(204, 154, 0, 0.10)',
       },
     },
   },

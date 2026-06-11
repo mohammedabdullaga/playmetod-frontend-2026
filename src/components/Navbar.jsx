@@ -18,7 +18,7 @@ function Navbar({ texts, lang, onChangeLang }) {
   return (
     <header className="relative z-40 border-b border-white/10 bg-slate-950/90 backdrop-blur-xl">
       <div className="mx-auto flex w-full max-w-7xl flex-wrap items-center justify-between gap-4 px-4 py-4 sm:px-6">
-        <NavLink to="/" className="text-2xl font-black tracking-tight text-transparent bg-gradient-to-r from-[#ffbb00] to-[#ffbb00] bg-clip-text">
+        <NavLink to="/" className="text-2xl font-black tracking-tight text-transparent bg-gradient-to-r from-[#cc9a00] to-[#cc9a00] bg-clip-text">
           PlayMe
         </NavLink>
         <nav className={`flex flex-1 flex-wrap items-center justify-center gap-3 text-sm sm:gap-6 ${isMobileMenuOpen ? 'flex-col absolute top-full left-0 right-0 bg-slate-950/95 p-4' : 'hidden sm:flex'}`}>
@@ -36,10 +36,10 @@ function Navbar({ texts, lang, onChangeLang }) {
           ))}
         </nav>
         <div className="flex items-center gap-2">
-          <a href={BUY_LINK} target="_blank" rel="noreferrer" className="rounded-full bg-[#ffbb00] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#e0a900]">
+          <a href={BUY_LINK} target="_blank" rel="noreferrer" className="rounded-full bg-[#cc9a00] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#b38f00]">
             {texts.nav.buyNow}
           </a>
-          <a href={REDEEM_LINK} target="_blank" rel="noreferrer" className="rounded-full border border-[#ffbb00]/15 bg-white/5 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:bg-white/10">
+          <a href={REDEEM_LINK} target="_blank" rel="noreferrer" className="rounded-full border border-[#cc9a00]/15 bg-white/5 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:bg-white/10">
             {texts.nav.redeem}
           </a>
           <LanguageSwitcher lang={lang} onChangeLang={onChangeLang} texts={texts} />

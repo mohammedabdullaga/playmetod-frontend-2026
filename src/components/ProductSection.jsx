@@ -93,7 +93,7 @@ function ProductSection({ texts }) {
     <section className="px-4 pb-16 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-6xl">
         <div className="mb-8">
-          <p className="text-sm uppercase tracking-[0.28em] text-[#ffbb00]/90">{texts.products.title}</p>
+          <p className="text-sm uppercase tracking-[0.28em] text-[#cc9a00]/90">{texts.products.title}</p>
           <h2 className="mt-3 text-3xl font-extrabold text-white sm:text-4xl">{texts.products.title}</h2>
           <p className="max-w-2xl text-slate-400">{texts.products.subtitle}</p>
         </div>
@@ -104,7 +104,7 @@ function ProductSection({ texts }) {
             return (
               <div key={group.category}>
                 <div className="mb-6">
-                  <p className="text-sm uppercase tracking-[0.28em] text-[#ffbb00]/90">{texts.products[group.titleKey]}</p>
+                  <p className="text-sm uppercase tracking-[0.28em] text-[#cc9a00]/90">{texts.products[group.titleKey]}</p>
                   <h3 className="mt-3 text-2xl font-semibold text-white sm:text-3xl">{texts.products[group.titleKey]}</h3>
                   <p className="max-w-2xl text-slate-400">{texts.products[group.descriptionKey]}</p>
                 </div>
@@ -113,24 +113,24 @@ function ProductSection({ texts }) {
                   {groupProducts.map((product) => {
                     const isEnabled = product.active
                     return (
-                      <div key={product.id} className="group overflow-hidden rounded-[28px] border border-[#ffbb00]/15 bg-slate-950/80 p-6 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-[#ffbb00]/30 hover:bg-slate-900/90">
-                        <div className="relative overflow-hidden rounded-3xl border border-[#ffbb00]/15 bg-slate-900/90 h-56">
+                      <div key={product.id} className="group overflow-hidden rounded-[28px] border border-[#cc9a00]/15 bg-slate-950/80 p-6 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-[#cc9a00]/30 hover:bg-slate-900/90">
+                        <div className="relative overflow-hidden rounded-3xl border border-[#cc9a00]/15 bg-slate-900/90 h-56">
                           <img src={product.image} alt={texts.products[product.nameKey]} className="h-full w-full object-contain transition duration-300 group-hover:scale-105" />
                           {product.badge && (
-                            <span className="absolute left-4 top-4 rounded-full bg-[#ffbb00] px-3 py-1 text-xs font-semibold uppercase tracking-[0.26em] text-slate-950 shadow-lg">
+                            <span className="absolute left-4 top-4 rounded-full bg-[#cc9a00] px-3 py-1 text-xs font-semibold uppercase tracking-[0.26em] text-slate-950 shadow-lg">
                               {texts.products[product.badge]}
                             </span>
                           )}
                         </div>
                         <div className="mt-6">
-                          <p className="text-sm uppercase tracking-[0.24em] text-[#ffbb00]/90">{texts.products[product.nameKey]}</p>
+                          <p className="text-sm uppercase tracking-[0.24em] text-[#cc9a00]/90">{texts.products[product.nameKey]}</p>
                           <h4 className="mt-3 text-2xl font-semibold text-white">{product.price}</h4>
                           <p className="mt-4 text-slate-400">{texts.products[product.descriptionKey]}</p>
                         </div>
                         <button
                           onClick={isEnabled ? () => openProduct(product) : undefined}
                           disabled={!isEnabled}
-                          className={`mt-6 inline-flex w-full items-center justify-center rounded-full px-5 py-3 text-sm font-semibold transition ${isEnabled ? 'bg-[#ffbb00] text-slate-950 hover:bg-[#e0a900]' : 'cursor-not-allowed bg-slate-700 text-slate-300 opacity-70'}`}
+                          className={`mt-6 inline-flex w-full items-center justify-center rounded-full px-5 py-3 text-sm font-semibold transition ${isEnabled ? 'bg-[#cc9a00] text-slate-950 hover:bg-[#b38f00]' : 'cursor-not-allowed bg-slate-700 text-slate-300 opacity-70'}`}
                         >
                           {isEnabled ? texts.products.buyButton : texts.products.productUnavailable}
                         </button>
@@ -146,14 +146,14 @@ function ProductSection({ texts }) {
 
       {selectedProduct && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4">
-          <div className="w-full max-w-xl rounded-[32px] border border-[#ffbb00]/15 bg-slate-950/95 p-6 shadow-[0_0_80px_rgba(255,187,0,0.22)]">
+          <div className="w-full max-w-xl rounded-[32px] border border-[#cc9a00]/15 bg-slate-950/95 p-6 shadow-[0_0_48px_rgba(204,154,0,0.14)]">
             <h3 className="text-xl font-semibold text-white">{texts.products.modalTitle}</h3>
             <p className="mt-4 text-slate-300">{texts.products.modalMessage}</p>
             <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-end">
-              <button onClick={continueToProduct} className="rounded-full bg-[#ffbb00] px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-[#e0a900]">
+              <button onClick={continueToProduct} className="rounded-full bg-[#cc9a00] px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-[#b38f00]">
                 {texts.products.modalContinue}
               </button>
-              <button onClick={closeModal} className="rounded-full border border-[#ffbb00]/15 bg-white/5 px-5 py-3 text-sm font-semibold text-slate-100 transition hover:bg-white/10">
+              <button onClick={closeModal} className="rounded-full border border-[#cc9a00]/15 bg-white/5 px-5 py-3 text-sm font-semibold text-slate-100 transition hover:bg-white/10">
                 {texts.products.modalCancel}
               </button>
             </div>
